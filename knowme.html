@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Know me well</title>
+    <link rel="stylesheet" href="knowme.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="icon" href="image/logo.png" type="image/png">
+
+</head>
+<body class="bg-color1">
+    <header>
+        <nav class="navbar navbar-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html#top">
+                    <img src="image/logo.png" width="30" height="30" class="align-top" alt="Logo"> Foxtrat
+                </a>
+                <button class="menu-button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                    <span class="bi bi-three-dots"></span> menu
+                </button>                
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menu</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
+                            <li class="nav-item"><a class="nav-link" href="index.html">Foxtrat</a></li>
+                            <li class="nav-item"><a class="nav-link" href="index.html#about">About me</a></li>
+                            <li class="nav-item"><a class="nav-link" href="index.html#portfolio">Portfolio</a></li>
+                            <li class="nav-item"><a class="nav-link" href="knowme.html">Know me well</a></li>
+                            <li class="nav-item"><a class="nav-link" href="color.html">Color Meaning</a></li>
+                            <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact me</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="title">Know me well</div>
+
+    <div class="grid-container">
+        <div class="grid-item" onclick="toggleImage(1)">
+            <span id="label1" class="label">Hobby</span>
+            <img id="img1" src="images/belyar.jpg" alt="Hobby" class="hidden">
+        </div>
+        <div class="grid-item" onclick="toggleImage(2)">
+            <span id="label2" class="label">Ball</span>
+            <img id="img2" src="images/ball.jpg" alt="Ball" class="hidden">
+        </div>
+        <div class="grid-item" onclick="toggleImage(3)">
+            <span id="label3" class="label">Color</span>
+            <img id="img3" src="images/black.png" alt="Color" class="hidden">
+        </div>
+        <div class="grid-item" onclick="toggleImage(4)">
+            <span id="label4" class="label">Season</span>
+            <img id="img4" src="images/season.jpg" alt="Season" class="hidden">
+        </div>
+        <div class="grid-item" onclick="toggleImage(5)">
+            <span id="label5" class="label">Character</span>
+            <img id="img5" src="images/character.jpg" alt="Character" class="hidden">
+        </div>
+        <div class="grid-item" onclick="toggleImage(6)">
+            <span id="label6" class="label">Dessert</span>
+            <img id="img6" src="images/dessert.jpg" alt="Dessert" class="hidden">
+        </div>
+        <div class="grid-item" onclick="toggleImage(7)">
+            <span id="label7" class="label">Food</span>
+            <img id="img7" src="images/food.jpg" alt="Food" class="hidden">
+        </div>
+        <div class="grid-item" onclick="toggleImage(8)">
+            <span id="label8" class="label">Place</span>
+            <img id="img8" src="images/place.jpg" alt="Place" class="hidden">
+        </div>
+        <div class="grid-item" onclick="toggleImage(9)">
+            <span id="label9" class="label">Time</span>
+            <img id="img9" src="images/time.jpg" alt="Time of the Day" class="hidden">
+        </div>
+    </div>
+<br>
+<br>
+    <script>
+        function toggleImage(id) {
+            let img = document.getElementById("img" + id);
+            let label = document.getElementById("label" + id);
+
+            // If the image is hidden, show it and remove the label
+            if (img.classList.contains("hidden")) {
+                img.classList.remove("hidden");
+                label.style.display = "none";  // Hide label when image is shown
+            } 
+            // If the image is visible, hide it and show the label again
+            else {
+                img.classList.add("hidden");
+                label.style.display = "inline-block";  // Show label when image is hidden
+            }
+        }
+
+        // Function to change background color class every 5 seconds
+        let colors = ['bg-color1', 'bg-color2', 'bg-color3', 'bg-color4'];
+        let currentIndex = 0;
+
+        setInterval(function() {
+            document.body.classList.remove(colors[currentIndex]);
+            currentIndex = (currentIndex + 1) % colors.length;
+            document.body.classList.add(colors[currentIndex]);
+        }, 2000); // Change every 2 seconds
+
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQ+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+</body>
+
+<footer class="footer-bottom">
+    <span>© Foxtrat 2025</span>
+</footer>
+
+</html>
