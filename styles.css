@@ -25,6 +25,11 @@ img {
   animation: fadeIn 2s ease-in-out;
 }
 
+.contact-form ::placeholder {
+  color: #ccc;
+  opacity: 1;
+}
+
 .content {
   display: flex;
   flex-wrap: wrap;
