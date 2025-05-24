@@ -21,6 +21,10 @@ body::-webkit-scrollbar {
   background-color: #121212 !important;
 }
 
+img {
+  animation: fadeIn 2s ease-in-out;
+}
+
 .content {
   display: flex;
   flex-wrap: wrap;
