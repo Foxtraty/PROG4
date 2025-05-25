@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="icon" href="image/logo.png" type="image/png">
+    <style>
+
+        body {
+            background-color: #121212;
+            color: #ffffff;
+        }
+        a {
+            color: #0d6efd;
+        }
+        a:hover {
+            color: #0a58ca;
+        }
+        .navbar-dark .navbar-nav .nav-link {
+            color: #ffffff;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #1f1f1f;
+        }
+
+        .menu-button {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            border: none;
+            background: none;
+            color: white;
+            font-size: 18px;
+            cursor: pointer;
+            }
+
+            .menu-button:hover {
+            color: #f39c12;
+            }
+
+            .menu-button span {
+            font-size: 24px;
+            }
+
+            .modal-img {
+            max-width: 300px;
+            width: 100%;
+            height: 130%;
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+            }
+
+            .card.light-blue {
+            background-color: #4b7a9b; /* Light blue */
+            color: #35455c;            /* Dark blue text for contrast */
+            }
+        
+    </style>
+</head>
+<body>
+    <header>
+  <nav class="navbar navbar-dark bg-dark fixed-top">
+<div class="container-fluid">
+    <a class="navbar-brand" href="#top">
+  <img src="image/logo.png" width="30" height="30" class="align-top" alt="Logo"> Foxtrat
+    </a>
+    <button class="menu-button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+  <span class="bi bi-three-dots"></span> menu
+    </button>
+    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+  <div class="offcanvas-header">
+<h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">menu</h5>
+<button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+<ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
+    <li class="nav-item"><a class="nav-link" href="index.html">Foxtrat</a></li>
+    <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+    <li class="nav-item"><a class="nav-link" href="index.html#portfolio">What do I do?</a></li>
+    <li class="nav-item"><a class="nav-link" href="knowme.html">Know me well</a></li>
+    <li class="nav-item"><a class="nav-link" href="color.html">Color Meaning</a></li>
+    <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+    <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact me</a></li>
+</ul>
+  </div>
+    </div>
+</div>
+  </nav>
+    </header>
+
+    <br><br>
+    <main class="container mt-5">
+        <section id="about" class="mb-5">
+            <center>
+            <h1>Portfolio</h1>
+        </center>
+        </section>
+
+        <section id="projects" class="mb-5">
+
+            <div class="row">
+                
+                <div class="col-md-4 mb-4">
+                    <div class="card light-blue text-white">
+                        <div class="card-body text-center">
+                            <h3 class="card-title">Online Participation Task</h3>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#project2Modal">View Online</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card light-blue text-white">
+                        <div class="card-body text-center">
+                            <h3 class="card-title">Onsite Participation Task</h3>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#project1Modal">View Onsite</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card light-blue text-white">
+                        <div class="card-body text-center">
+                            <h3 class="card-title">Unit Output Task</h3>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#project4Modal">View UO</button>
+                        </div>
+                    </div>
+                </div>
+                
+
+            <div class="row align-items-stretch">
+                <div class="col-md-6 mb-4">
+                    <div class="card light-blue text-white h-100 d-flex flex-column justify-content-center">
+                        <div class="card-body text-center">
+                            <h3 class="card-title">Hands-on Actual Task</h3>
+                            <button class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#project3Modal">View HOA</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card light-blue text-white h-100 d-flex flex-column justify-content-center">
+                        <div class="card-body text-center">
+                            <h3 class="card-title">Examinations</h3>
+                            <button class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#project5Modal">View Exams</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <footer>
+        <p>&copy; 2025 Foxtrat. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Modals -->
+<div class="modal fade" id="project1Modal" tabindex="-1" aria-labelledby="project1ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-dark text-white">
+            <div class="modal-header">
+                <h5 class="modal-title" id="project1ModalLabel">Onsite Participation Task</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+
+                <img src="task/ONSITE/johari.jfif" class="img-fluid rounded mb-3 modal-img" alt="Project 1">
+                <img src="task/ONSITE/task1.jfif" class="img-fluid rounded mb-3 modal-img" alt="Project 1">
+                <img src="task/ONSITE/task2.jfif" class="img-fluid rounded mb-3 modal-img" alt="Project 1">
+                <img src="task/ONSITE/task3.jfif" class="img-fluid rounded mb-3 modal-img" alt="Project 1">
+                <img src="task/ONSITE/task4.jfif" class="img-fluid rounded mb-3 modal-img" alt="Project 1">
+                <img src="task/ONSITE/task5.jfif" class="img-fluid rounded mb-3 modal-img" alt="Project 1">
+                <img src="task/ONSITE/task6.jfif" class="img-fluid rounded mb-3 modal-img" alt="Project 1">
+                <img src="task/ONSITE/task7.jfif" class="img-fluid rounded mb-3 modal-img" alt="Project 1">
+                <img src="task/ONSITE/task8.jfif" class="img-fluid rounded mb-3 modal-img" alt="Project 1">
+                <img src="task/ONSITE/task9.jfif" class="img-fluid rounded mb-3 modal-img" alt="Project 1">
+                <img src="task/ONSITE/HomeWireframe.jfif" class="img-fluid rounded mb-3 modal-img" alt="Project 1">
+                <img src="task/ONSITE/AboutWireframe.jfif" class="img-fluid rounded mb-3 modal-img" alt="Project 1">
+                <img src="task/ONSITE/KMWWireframe.jfif" class="img-fluid rounded mb-3 modal-img" alt="Project 1">
+                <img src="task/ONSITE/ORMWireframe.jfif" class="img-fluid rounded mb-3 modal-img" alt="Project 1">
+                <img src="task/ONSITE/PortfolioWireframe.jfif" class="img-fluid rounded mb-3 modal-img" alt="Project 1">
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="project2Modal" tabindex="-1" aria-labelledby="project2ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-dark text-white">
+            <div class="modal-header">
+                <h5 class="modal-title" id="project2ModalLabel">Online Participation Task</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+
+                <img src="task/ONLINE/dareEvent.png" class="img-fluid rounded mb-3 modal-img" alt="Project 2">
+                <img src="task/ONLINE/band.png" class="img-fluid rounded mb-3 modal-img" alt="Project 2">
+                <img src="task/ONLINE/profile.png" class="img-fluid rounded mb-3 modal-img" alt="Project 2">
+                <img src="task/ONLINE/COR.png" class="img-fluid rounded mb-3 modal-img" alt="Project 2">
+                <img src="task/ONLINE/cu3rating.png" class="img-fluid rounded mb-3 modal-img" alt="Project 2">
+                <img src="task/ONLINE/preHOA3.png" class="img-fluid rounded mb-3 modal-img" alt="Project 2">
+                <img src="task/ONLINE/cu4rating.png" class="img-fluid rounded mb-3 modal-img" alt="Project 2">
+                <img src="task/ONLINE/preHOA4.png" class="img-fluid rounded mb-3 modal-img" alt="Project 2">
+                <img src="task/ONLINE/cu5rating.png" class="img-fluid rounded mb-3 modal-img" alt="Project 2">
+                <img src="task/ONLINE/preHOA5.png" class="img-fluid rounded mb-3 modal-img" alt="Project 2">
+                <img src="task/ONLINE/cu6rating.png" class="img-fluid rounded mb-3 modal-img" alt="Project 2">
+                <img src="task/ONLINE/preHOA6.png" class="img-fluid rounded mb-3 modal-img" alt="Project 2">
+                <img src="task/ONLINE/pretestCU7.png" class="img-fluid rounded mb-3 modal-img" alt="Project 2">
+                <img src="task/ONLINE/posttestCU7.png" class="img-fluid rounded mb-3 modal-img" alt="Project 2">
+                <img src="task/ONLINE/cu7rating.png" class="img-fluid rounded mb-3 modal-img" alt="Project 2">
+                <img src="task/ONLINE/GADevent.png" class="img-fluid rounded mb-3 modal-img" alt="Project 2">
+                <img src="task/ONLINE/cu8rating.png" class="img-fluid rounded mb-3 modal-img" alt="Project 2">
+                <img src="task/ONLINE/cu9rating.png" class="img-fluid rounded mb-3 modal-img" alt="Project 2">
+                <img src="task/ONLINE/midtermReview1.png" class="img-fluid rounded mb-3 modal-img" alt="Project 2">
+                <img src="task/ONLINE/midtermReview2.png" class="img-fluid rounded mb-3 modal-img" alt="Project 2">
+                <img src="task/ONLINE/cu10rating.png" class="img-fluid rounded mb-3 modal-img" alt="Project 2">
+                <img src="task/ONLINE/cu11rating.png" class="img-fluid rounded mb-3 modal-img" alt="Project 2">
+                <img src="task/ONLINE/cu12rating.png" class="img-fluid rounded mb-3 modal-img" alt="Project 2">
+                <img src="task/ONLINE/cu13rating.png" class="img-fluid rounded mb-3 modal-img" alt="Project 2">
+                <img src="task/ONLINE/progressReport.png" class="img-fluid rounded mb-3 modal-img" alt="Project 2">
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="project3Modal" tabindex="-1" aria-labelledby="project3ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-dark text-white">
+            <div class="modal-header">
+                <h5 class="modal-title" id="project3ModalLabel">Hands-on Actual Task</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+
+                <img src="task/HOA/handsOn1.jfif" class="img-fluid rounded mb-3 modal-img" alt="Project 3">
+                <img src="task/HOA/hoa2.png" class="img-fluid rounded mb-3 modal-img" alt="Project 3">
+                <img src="task/HOA/hoa3.png" class="img-fluid rounded mb-3 modal-img" alt="Project 3">
+                <img src="task/HOA/hoa4.png" class="img-fluid rounded mb-3 modal-img" alt="Project 3">
+                <img src="task/HOA/hoa5.png" class="img-fluid rounded mb-3 modal-img" alt="Project 3">
+                <img src="task/HOA/hoa6.png" class="img-fluid rounded mb-3 modal-img" alt="Project 3">
+                <img src="task/HOA/hoa7.png" class="img-fluid rounded mb-3 modal-img" alt="Project 3">
+                <img src="task/HOA/hoa8.png" class="img-fluid rounded mb-3 modal-img" alt="Project 3">
+                <img src="task/HOA/hoa9.png" class="img-fluid rounded mb-3 modal-img" alt="Project 3">
+                <img src="task/HOA/hoa10.png" class="img-fluid rounded mb-3 modal-img" alt="Project 3">
+
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="project4Modal" tabindex="-1" aria-labelledby="project4ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-dark text-white">
+            <div class="modal-header">
+                <h5 class="modal-title" id="project4ModalLabel">Unit Output Task</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+
+                <img src="task/UO/UO1.jfif" class="img-fluid rounded mb-3 modal-img" alt="Project 4">
+                <img src="task/UO/UO2.jfif" class="img-fluid rounded mb-3 modal-img" alt="Project 4">
+                <img src="task/UO/UO3.jfif" class="img-fluid rounded mb-3 modal-img" alt="Project 4">
+                <img src="task/UO/UO4.jfif" class="img-fluid rounded mb-3 modal-img" alt="Project 4">
+                <img src="task/UO/UO5.jfif" class="img-fluid rounded mb-3 modal-img" alt="Project 4">
+                <img src="task/UO/UO6.jfif" class="img-fluid rounded mb-3 modal-img" alt="UO6">
+                <img src="task/UO/UO7.jfif" class="img-fluid rounded mb-3 modal-img" alt="UO7">
+                <img src="task/UO/UO8.jfif" class="img-fluid rounded mb-3 modal-img" alt="UO8">
+                <img src="task/UO/UO9.jfif" class="img-fluid rounded mb-3 modal-img" alt="UO9">
+                <img src="task/UO/UO10.jfif" class="img-fluid rounded mb-3 modal-img" alt="UO10">
+                
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="project5Modal" tabindex="-1" aria-labelledby="project5ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-dark text-white">
+            <div class="modal-header">
+                <h5 class="modal-title" id="project5ModalLabel">Examinations</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+
+                <img src="task/EXAM/prelim.jfif" class="img-fluid rounded mb-3 modal-img" alt="Project 5">
+                <img src="task/EXAM/midterm.jfif" class="img-fluid rounded mb-3 modal-img" alt="Project 5">
+                <img src="task/EXAM/midterm+20.jfif" class="img-fluid rounded mb-3 modal-img" alt="Project 5">
+
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
