@@ -21,6 +21,12 @@ body::-webkit-scrollbar {
   background-color: #121212 !important;
 }
 
+.tup {
+  height: 40%;
+  width: 40%;
+  border-radius: 20px;
+}
+
 img {
   animation: fadeIn 2s ease-in-out;
 }
